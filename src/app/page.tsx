@@ -13,14 +13,14 @@ export default function Home() {
         after:z-10
         after:h-32
         after:bg-repeat-x
-        after:bg-[top_0.125rem_center]
+        after:bg-[top_5rem_center]
         after:bg-[length:50rem]
         after:left-0
         after:w-full"
       >
         <Header />
         <PromoBanner barbershopCount={barbsershopData.barbershopCount} />
-        <div className="bg-[url('/images/4_1.png')] w-full h-full bg-[center_top] scale-75 bg-cover z-10 absolute" />
+        <div className="block bg-[url('/images/hero_overlay.png')] w-full h-full bg-no-repeat bg-[center_bottom] bg-[length:85%] z-10 absolute" />
       </div>
     </main>
   );
