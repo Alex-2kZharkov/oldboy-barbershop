@@ -1,6 +1,13 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
+<<<<<<< Updated upstream
 import { Providers } from './store/provider';
+=======
+import { Provider } from 'react-redux';
+import { store } from '@/store/store';
+import { PropsWithChildren } from 'react';
+import { ReduxProvider } from '@/store/provider';
+>>>>>>> Stashed changes
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -13,8 +20,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={inter.className}>
+<<<<<<< Updated upstream
         <Providers>{children}</Providers>
+=======
+        <ReduxProvider>{children}</ReduxProvider>
+>>>>>>> Stashed changes
       </body>
     </html>
   );
 }
+
+// export function ReduxProvider({ children }: PropsWithChildren) {
+//   return <Provider store={store}>{children}</Provider>;
+// }
