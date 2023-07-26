@@ -1,7 +1,7 @@
 'use client';
 
 import { configureStore } from '@reduxjs/toolkit';
-import oldboyReducer from './Features/OldboyBarbershop/OldBoySlice';
+import oldboyReducer from '../../Features/oldBoyBarbershop/oldBoySlice';
 
 export const store = configureStore({
   reducer: {
