@@ -31,18 +31,7 @@ export const Header = (): ReactElement => {
         px-12
         pb-16
         overflow-hidden
-        text-white
-        after:bg-[url('/images/bg/white-grunge.svg')]
-        after:block
-        after:-bottom-10
-        after:z-10
-        after:absolute
-        after:h-20
-        after:bg-repeat-x
-        after:bg-[top_0.125rem_center]
-        after:bg-[length:50rem]
-        after:left-0
-        after:w-full"
+        text-white"
     >
       <div className="hero__top  relative flex mb-5 mt-1.3">
         <div className="hero__logo relative w-36 mr-6 flex align-top">
