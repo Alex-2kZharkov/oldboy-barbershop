@@ -24,8 +24,6 @@ export const Header = (): ReactElement => {
         hero
         hero--branch
         flex
-        h-screen
-        bg-[url('/images/bg/hero.jpg')]
         relative
         pt-14
         px-12
