@@ -39,8 +39,17 @@ module.exports = {
         15: '-15deg',
       },
       boxShadow: {
-        btn: '0 3px 10px rgba(84,220,179,.5)',
+        btn: '0 3px 10px rgba(84, 220, 179, .5)',
       },
+      width: {
+        180: '180px'
+      } ,
+      minWidth: {
+        180: '180px'
+      },
+      maxWidth: {
+        180: '180px'
+      }
     },
   },
   variants: {},
