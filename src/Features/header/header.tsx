@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ReactElement, useState } from 'react';
+import { Button } from '@/components/Button';
 import { Header } from '../../components/Header';
 import { Promo } from './components/Promo';
 import { Sidebar } from './components/Sidebar';
@@ -12,24 +13,32 @@ export const HeaderPage = (): ReactElement => {
       <div>
         <Header />
         <Promo />
-        <div className="display: inline-grid mt-44 ml-12">
-          <button
-            onClick={(previous) => setIsOpen(!previous)}
-            type="button"
-            className="text-white bg-orange-title border-2 border-orange-title h-10 w-44 m-2 rounded-3xl font-button_font uppercase text-xs font-medium hover:bg-white hover:text-black"
-          >
-            запись онлайн
-          </button>
-
-          <Link href="/">
-            <button
-              type="button"
-              className="text-btn-blue bg-transparent border-2 border-btn-blue h-10 w-44 m-2 rounded-3xl font-button_font uppercase text-xs font-medium shadow-btn opacity-70 hover:opacity-100"
-            >
-              купить косметику
-            </button>
-          </Link>
-        </div>
+        <Button
+          background="orange-title"
+          buttonText="запись онлайн"
+          textColor="text-white"
+          borderColor="border-orange-title"
+          height="h-2"
+          width="w-44"
+          onHover="hover:bg-white"
+          textSize="text-xs"
+          onClickAction={() => setIsOpen((prevState) => !prevState)}
+        />
+        <Link href="/">
+          <Button
+            background="transparent"
+            buttonText="купить косметику"
+            textColor="text-btn-blue"
+            borderColor="border-btn-blue"
+            height="h-22"
+            width="w-44"
+            textSize="text-xs"
+            onHover="hover:bg-white"
+            opacity="opacity-70"
+            shadow="shadow-btn"
+          />
+        </Link>
+        {/* </div> */}
       </div>
       {isOpen && <Sidebar setIsOpen={() => setIsOpen((prevState) => !prevState)} />}
     </>

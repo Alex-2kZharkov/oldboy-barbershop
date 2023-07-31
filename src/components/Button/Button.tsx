@@ -1,3 +1,8 @@
+export interface HoverProps {
+  changeTextColor: string | undefined;
+  // onBackground: string | undefined;
+}
+
 export interface ButtonProps {
   background: string;
   buttonText: string;
@@ -5,7 +10,11 @@ export interface ButtonProps {
   borderColor: string;
   height: string;
   width: string;
-  onHover: string | null;
+  textSize: string;
+  opacity?: string;
+  shadow?: string;
+  onHover: string | HoverProps | null;
+  onClickAction?: () => void;
 }
 
 export const Button = ({
@@ -16,11 +25,16 @@ export const Button = ({
   height,
   width,
   onHover,
+  textSize,
+  opacity,
+  shadow,
+  onClickAction,
 }: ButtonProps): JSX.Element => {
   return (
     <button
       type="button"
-      className={`bg-${background} text-${textColor} border-${borderColor} h-${height} w-${width} m-2 font-button_font rounded-3xl hover:${onHover}`}
+      className={`bg-${background} text-${textColor} border-${borderColor} h-${height} w-${width} m-10 p-1.5 font-button_font text-${textSize} rounded-3xl hover:${onHover} border-2 uppercase font-medium opacity-${opacity} shadow-${shadow}`}
+      onClick={onClickAction}
     >
       {buttonText}
     </button>
