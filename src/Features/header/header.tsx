@@ -16,26 +16,26 @@ export const HeaderPage = (): ReactElement => {
         <Button
           background="orange-title"
           buttonText="запись онлайн"
-          textColor="text-white"
-          borderColor="border-orange-title"
+          textColor="white"
+          borderColor="orange-title"
           height="h-2"
           width="w-44"
-          onHover="hover:bg-white"
-          textSize="text-xs"
+          onHover="bg-white"
+          textSize="xs"
           onClickAction={() => setIsOpen((prevState) => !prevState)}
         />
         <Link href="/">
           <Button
             background="transparent"
             buttonText="купить косметику"
-            textColor="text-btn-blue"
-            borderColor="border-btn-blue"
-            height="h-22"
-            width="w-44"
-            textSize="text-xs"
-            onHover="hover:bg-white"
-            opacity="opacity-70"
-            shadow="shadow-btn"
+            textColor="btn-blue"
+            borderColor="btn-blue"
+            height="22"
+            width="44"
+            textSize="xs"
+            onHover="bg-white"
+            opacity="70"
+            shadow="boxShadow.btn"
           />
         </Link>
         {/* </div> */}
