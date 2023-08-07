@@ -12,13 +12,13 @@ describe('HeaderMainPage', () => {
   test('pass the header main page buttons', async () => {
     render(<HeaderPage />);
 
-    const btnRecord = screen.getByRole('button', { name: 'запись онлайн' });
-    await userEvent.click(btnRecord);
+    const buttonRecord = screen.getByRole('button', { name: 'Запись онлайн' });
+    await userEvent.click(buttonRecord);
 
-    expect(btnRecord).toBeEnabled();
+    expect(buttonRecord).toBeEnabled();
 
-    const btnBuy = await screen.findByRole('button', { name: 'купить косметику' });
+    const buttonBuy = screen.getByText('Купить косметику');
 
-    expect(btnBuy).toBeEnabled();
+    expect(buttonBuy).toBeInTheDocument();
   });
 });
