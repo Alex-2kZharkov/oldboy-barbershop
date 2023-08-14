@@ -1,10 +1,9 @@
 import Link from 'next/link';
 import React, { ReactElement, useState } from 'react';
 import { setCookie } from 'cookies-next';
-import { useSetSelectedEntity } from '@/hooks/useSetSelectedEntity';
+import { useSetSelectedEntity } from '../../../../../hooks/useSetSelectedEntity';
 import { Modal } from '../../../../../components/Modal/Modal';
 import { SEVEN_DAYS, Cookies } from '../../../../../constants';
-import { Dropdown } from '../../../../../components/Dropdown/Dropdown';
 
 interface CitySelectProps {
   cityValue: string;
@@ -62,7 +61,6 @@ export const CitySelect = ({ cityValue }: CitySelectProps): ReactElement => {
           <h1 className="text-black font-rex text-2xl font-bold">
             Выбери <span className="text-orange-title">свой барбершоп</span>
           </h1>
-          <Dropdown />
           <p
             className="font-rex p-2 mt-5 text-black cursor-pointer"
             onClick={() => handlePickCity('Москва')}
