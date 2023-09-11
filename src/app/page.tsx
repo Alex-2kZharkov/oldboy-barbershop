@@ -1,7 +1,7 @@
 'use client';
 
 import { Footer } from '../components/Footer/Footer';
-import { HeaderPage } from '../Features/header';
+import { HeaderPage } from '../features/header';
 import { PromoCard } from '../components/PromoCard';
 
 const Home = async () => {

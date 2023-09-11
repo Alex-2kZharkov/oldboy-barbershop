@@ -2,7 +2,7 @@
 
 import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
-import { headerReducer, searchingSlice } from '../Features/header';
+import { headerReducer, searchingSlice } from '../features/header';
 
 export const store = configureStore({
   reducer: {
