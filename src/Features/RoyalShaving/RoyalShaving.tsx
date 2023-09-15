@@ -37,7 +37,12 @@ export const RoyalShaving = ({ mainNavList }: HeaderPageProps): ReactElement => 
         <Layout>
           <div>
             <Header mainNavList={mainNavList} />
-            <ServicePromo titleTop="Королевское" titleBottom="бритьё" iconVariant="shavette" />
+            <ServicePromo
+              titleTop="Королевское"
+              titleBottom="бритьё"
+              iconVariant="shavette"
+              iconPosition="forRoyalShaving"
+            />
           </div>
         </Layout>
       </div>
