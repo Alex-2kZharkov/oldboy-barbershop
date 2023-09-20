@@ -1,10 +1,12 @@
 import { ReactElement } from 'react';
+import Image from 'next/image';
+
 import { PromoHeader } from '../PromoHeader';
 
 export const PromoCard = (): ReactElement => {
   return (
-    <section className="about mt-8">
-      <div className="about-header flex flex-col mb-8 pb-5">
+    <section className="about mt-8 flex">
+      <div className="about-header flex flex-col mb-8 pb-5 ">
         <PromoHeader>
           <h2
             className="section-header__title 
@@ -52,6 +54,47 @@ export const PromoCard = (): ReactElement => {
           >
             Oldboy barbershop
           </p>
+        </div>
+      </div>
+      <div className="about-caption pl-10 w-auto bg-[url('/images/bg/about-bg.jpeg')] pr-10">
+        <div className="py-5 pr-10">
+          <h1 className="about-headline font-rex text-3xl leading-7">
+            Oldboy — Барбершоп с твоим характером
+          </h1>
+          <p className="about-subtitle font-button_font text-base leading-8 mt-4 text-orange-bg font-semibold	">
+            У НАС ЕСТЬ ВСЁ, ЧТО ТРЕБУЕТСЯ НАСТОЯЩЕМУ МУЖЧИНЕ: АТМОСФЕРА БРУТАЛЬНОСТИ И МУЖСКОГО
+            ДУХА, ПРОФЕССИОНАЛИЗМ БАРБЕРОВ И СОХРАНЕНИЕ ЕВРОПЕЙСКИХ ТРАДИЦИЙ БАРБЕРИНГА, А ТАКЖЕ
+            ОТЛИЧНЫЙ КОФЕ И ХОРОШАЯ КОМПАНИЯ
+          </p>
+        </div>
+        <p className="about-subtitle text-lg font-button_font leading-7 my-4">
+          OldBoy Barbershop — намного больше, чем просто мужская парикмахерская. Это место, где Вам
+          помогут найти свой собственный, неповторимый стиль. Стоит довериться мастерам OldBoy один
+          раз, и, поверьте, новый образ не оставит Вас равнодушным. Мужские стрижки и опасное бритье
+          — это наш профиль, и мы уверены, что наши барберы делают это лучше всех. Как сказал
+          однажды знаменитый Ральф Лорен: «Какой бы Вы образ жизни ни вели, у вас должен быть свой
+          собственный стиль, свой собственный мир». Обещать, конечно, что мы сделаем из Вас Кэри
+          Гранта мы не будем, но Вы можете быть уверены в 3-х вещах:
+        </p>
+        <div className="flex text-center p-8">
+          <article className="items-center mb-10 flex flex-col basis-1/3">
+            <Image src="/images/icons/about-icon1.svg" width={80} height={100} alt="Coffee icon" />
+            <p className="p-5 text-sm leading-8 tracking-wider text-orange-bg">
+              ВАМ ОБЯЗАТЕЛЬНО ПРЕДЛОЖАТ ЧАШЕЧКУ АРОМАТНОГО КОФЕ ИЛИ ЧАЯ
+            </p>
+          </article>
+          <article className="items-center mb-10 flex flex-col basis-1/3">
+            <Image src="/images/icons/about-icon2.svg" width={80} height={100} alt="Coffee icon" />
+            <p className="p-5 text-sm leading-8 tracking-wider text-orange-bg">
+              МЫ ПОСТРИЖЕМ И ПОБРЕЕМ ВАС НА ВЫСШЕМ УРОВНЕ ПО ВСЕМ ЕВРОПЕЙСКИМ ТРАДИЦИЯМ
+            </p>
+          </article>
+          <article className="items-center mb-10 flex flex-col basis-1/3">
+            <Image src="/images/icons/about-icon3.svg" width={80} height={100} alt="Coffee icon" />
+            <p className="p-5 text-sm leading-8 tracking-wider text-orange-bg">
+              ВЫ НЕ УСПЕЕТЕ ЗАМЕТИТЬ, КАК СНОВА ЗАХОТИТЕ ВЕРНУТЬСЯ В НАШ БАРБЕРШОП
+            </p>
+          </article>
         </div>
       </div>
     </section>

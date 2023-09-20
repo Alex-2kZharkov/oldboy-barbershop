@@ -3,6 +3,8 @@
 import { Footer } from '../components/Footer/Footer';
 import { HeaderPage } from '../Features/header';
 import { PromoCard } from '../components/PromoCard';
+import { PromoServices } from '../components/PromoServices';
+import { PromoCosmetics } from '../components/PromoCosmetics';
 
 const Home = async () => {
   const [barbershopsInfoResponse, footerListsResponse] = await Promise.all([
@@ -13,9 +15,9 @@ const Home = async () => {
     { branchesTotal, countriesTotal, capitalsTotal },
     { footerMainList, footerServicesList, footerInfoList },
   ] = await Promise.all([barbershopsInfoResponse.json(), footerListsResponse.json()]);
-
+  // className=" overflow-hidden flex md:container max-w-{1700px}  mx-auto flex-col">
   return (
-    <main className="overflow-hidden flex md:container md:max-w-screen-2xl mx-auto flex-col">
+    <main className="overflow-hidden mx-auto max-w-1800">
       <div
         className="flex
         flex-col
@@ -33,11 +35,14 @@ const Home = async () => {
         after:bg-[top_1rem_center]
         after:bg-[length:50rem]
         after:left-0
-        after:w-full"
+        after:w-full
+        "
       >
         <HeaderPage branchesTotal={branchesTotal} />
       </div>
       <PromoCard />
+      <PromoServices />
+      <PromoCosmetics />
 
       <Footer
         branchesTotal={branchesTotal}
