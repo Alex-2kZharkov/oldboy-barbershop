@@ -1,8 +1,9 @@
 'use client';
 
 import { Footer } from '../components/Footer/Footer';
-import { HeaderPage } from '../Features/header';
+import { HeaderPage } from '../features/header';
 import { PromoCard } from '../components/PromoCard';
+import { AboutUs } from '@/components/AboutUs/AboutUs';
 
 const Home = async () => {
   const [headerListResponse, barbershopsInfoResponse, footerListsResponse] = await Promise.all([
@@ -44,7 +45,10 @@ const Home = async () => {
         >
           <HeaderPage mainNavList={headerMainList} branchesTotal={branchesTotal} />
         </div>
-        <PromoCard />
+        <div className="flex">
+          <PromoCard />
+          <AboutUs />
+        </div>
       </main>
       <Footer
         branchesTotal={branchesTotal}

@@ -5,7 +5,7 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/Features/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/features/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -18,7 +18,7 @@ module.exports = {
         'btn-blue': '#56afe1',
         'orange-bg': '#896322',
         'opacity-tan': '#333',
-        'reddish': '#af212e',
+        reddish: '#af212e',
         'footer-grey': '#aeaeae',
       },
       fontSize: {
@@ -59,13 +59,13 @@ module.exports = {
         'ping-slow': 'ping 2s cubic-bezier(.37,0,.8,.77) infinite',
       },
       flexBasis: {
-        'footer-basis': "calc(100% - 320px)",
+        'footer-basis': 'calc(100% - 320px)',
       },
       width: {
-        'stageImageWidth': "calc(100% + 40px)",
+        stageImageWidth: 'calc(100% + 40px)',
       },
       backgroundSize: {
-        '150': '150px',
+        150: '150px',
       },
       screens: {
         sm: '360px',

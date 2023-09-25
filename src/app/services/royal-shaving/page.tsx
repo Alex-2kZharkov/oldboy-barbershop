@@ -1,6 +1,6 @@
 'use client';
 
-import { RoyalShaving } from '@/Features/RoyalShaving';
+import { RoyalShaving } from '@/features/RoyalShaving';
 import { Footer } from '@/components/Footer';
 
 const RoyalShavingPage = async () => {
