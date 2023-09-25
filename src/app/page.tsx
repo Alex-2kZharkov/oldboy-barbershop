@@ -5,7 +5,6 @@ import { Footer } from '../components/Footer/Footer';
 import { HeaderPage } from '../Features/header';
 import { PromoCard } from '../components/PromoCard';
 
-
 const Home = async () => {
   const [headerListResponse, barbershopsInfoResponse, footerListsResponse] = await Promise.all([
     fetch('http://localhost:3000/api/headerList'),
