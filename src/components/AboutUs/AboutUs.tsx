@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-
+import { AboutUsIcon } from '../AboutUsIcons/AboutUsIcons';
 
 export const AboutUs = (): ReactElement => {
   return (
