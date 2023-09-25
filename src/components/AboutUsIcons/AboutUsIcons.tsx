@@ -5,8 +5,6 @@ type AboutUsIconProps = {
   src: string;
   alt?: string;
   text: string;
-  width: number;
-  height: number;
 };
 
 export const AboutUsIcon: React.FC<AboutUsIconProps> = ({ src, alt = 'About Us', text }) => {
