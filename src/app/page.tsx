@@ -1,4 +1,5 @@
 'use client';
+
 import { AboutUs } from '@/components/AboutUs/AboutUs';
 import { Footer } from '../components/Footer/Footer';
 import { HeaderPage } from '../Features/header';
