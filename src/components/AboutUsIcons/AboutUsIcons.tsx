@@ -9,7 +9,7 @@ type AboutUsIconProps = {
   height: number;
 };
 
-export const AboutUsIcon: React.FC<AboutUsIconProps> = ({ src, alt = 'About Us', text, width, height }) => {
+export const AboutUsIcon: React.FC<AboutUsIconProps> = ({ src, alt = 'About Us', text }) => {
   return (
     <div className="flex-col items-center justify-center py-5">
       <div className="relative w-20 h-auto mx-auto mb-5">
