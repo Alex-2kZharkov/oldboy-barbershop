@@ -1,7 +1,7 @@
 'use client';
 
 import { Footer } from '../components/Footer/Footer';
-import { HeaderPage } from '../features/header';
+import { HeaderPage } from '../Features/header';
 import { PromoCard } from '../components/PromoCard';
 import { AboutUs } from '@/components/AboutUs/AboutUs';
 
