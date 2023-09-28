@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-type AboutUsIconProps = {
+interface AboutUsIconProps = {
   src: string;
   alt?: string;
   text: string;
