@@ -3,7 +3,7 @@ import { AboutUsIcon } from '../AboutUsIcons/AboutUsIcons';
 
 export const AboutUs = (): ReactElement => {
   return (
-    <div className="py-15 px-20 ">
+    <section className="py-15 px-20 ">
       <div className="about__caption ">
         <h3
           className="about__headline 
@@ -64,6 +64,6 @@ export const AboutUs = (): ReactElement => {
           text="ВЫ НЕ УСПЕЕТЕ ЗАМЕТИТЬ, КАК СНОВА ЗАХОТИТЕ ВЕРНУТЬСЯ В НАШ БАРБЕРШОП"
         />
       </div>
-    </div>
+    </section>
   );
 };
