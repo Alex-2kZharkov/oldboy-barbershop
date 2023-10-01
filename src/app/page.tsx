@@ -1,9 +1,9 @@
 'use client';
-
-import { Footer } from '../components/Footer/Footer';
-import { HeaderPage } from '../features/header';
-import { PromoCard } from '../components/PromoCard';
 import { ScrollButton } from '@/components/ScrollButton/ScrollButton';
+import { Footer } from '../components/Footer/Footer';
+import { HeaderPage } from '../Features/header';
+import { PromoCard } from '../components/PromoCard';
+
 
 const Home = async () => {
   const [headerListResponse, barbershopsInfoResponse, footerListsResponse] = await Promise.all([
