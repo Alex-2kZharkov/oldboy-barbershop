@@ -1,4 +1,5 @@
 'use client';
+
 import { ScrollButton } from '@/components/ScrollButton/ScrollButton';
 import { Footer } from '../components/Footer/Footer';
 import { HeaderPage } from '../Features/header';
