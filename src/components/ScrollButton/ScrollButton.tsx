@@ -50,8 +50,14 @@ export const ScrollButton = (): ReactElement | null => {
   };
 
   return (
-    <button className="up-button" id="up-button" type = "button" onClick={scrollToTop} style={buttonStyles}>
-      <BiArrowToTop size={30} color="white" />
+    <button
+      className="up-button"
+      id="up-button"
+      type="button"
+      onClick={scrollToTop}
+      style={buttonStyles}
+    >
+      <BiArrowToTop size={40} color="white" />
     </button>
   );
 };
