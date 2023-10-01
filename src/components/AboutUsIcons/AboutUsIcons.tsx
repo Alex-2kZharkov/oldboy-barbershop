@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react';
 import Image from 'next/image';
 
-interface AboutUsIconProps = {
+interface AboutUsIconProps {
   src: string;
   alt?: string;
   text: string;
-};
+}
 
 export const AboutUsIcon = ({ src, alt = 'About Us', text }: AboutUsIconProps): ReactElement => {
   return (
