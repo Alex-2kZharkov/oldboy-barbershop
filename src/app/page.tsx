@@ -1,5 +1,6 @@
 'use client';
 
+import { AboutUs } from '@/components/AboutUs/AboutUs';
 import { Footer } from '../components/Footer/Footer';
 import { HeaderPage } from '../Features/header';
 import { PromoCard } from '../components/PromoCard';
@@ -44,7 +45,10 @@ const Home = async () => {
         >
           <HeaderPage mainNavList={headerMainList} branchesTotal={branchesTotal} />
         </div>
-        <PromoCard />
+        <div className="flex">
+          <PromoCard />
+          <AboutUs />
+        </div>
       </main>
       <Footer
         branchesTotal={branchesTotal}
