@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import Image from 'next/image';
 
 interface AboutUsIconProps = {
@@ -7,7 +7,7 @@ interface AboutUsIconProps = {
   text: string;
 };
 
-export const AboutUsIcon = ({ src, alt = 'About Us', text }: AboutUsIconProps) => {
+export const AboutUsIcon = ({ src, alt = 'About Us', text }: AboutUsIconProps): ReactElement => {
   return (
     <div className="flex-col items-center justify-center py-5">
       <div className="relative w-20 h-auto mx-auto mb-5">
