@@ -96,8 +96,8 @@ export const PromoServices = (): ReactElement => {
             >
               <div className="font-rex">
                 <p className="text-xs text-orange-title">СТИЛЬ И ПРОФЕССИОНАЛИЗМ</p>
-                <h3 className="text-2xl">
-                  <strong className="text-4xl">Бритьё</strong>
+                <h3 className="text-lg lg:2xl">
+                  <strong className="text-2xl lg:text-4xl">Бритьё</strong>
                   <br />
                   бороды и головы
                 </h3>
@@ -112,14 +112,14 @@ export const PromoServices = (): ReactElement => {
             >
               <div className="font-rex">
                 <p className="text-xs text-orange-title">ДЛЯ НАСТОЯЩИХ ЦЕНИТЕЛЕЙ</p>
-                <h3 className="text-2xl">
-                  <strong className="text-4xl">Королевское</strong>
+                <h3 className="text-lg lg:2xl">
+                  <strong className="text-2xl lg:text-4xl">Королевское</strong>
                   <br />
                   бритье
                 </h3>
               </div>
               <div className="block text-right ">
-                <Button variant="serviceLink">Услуги бритья</Button>
+                <Button variant="serviceLink">для ценителей</Button>
               </div>
             </article>
             <article
@@ -128,14 +128,14 @@ export const PromoServices = (): ReactElement => {
             >
               <div className="font-rex">
                 <p className="text-xs text-orange-title">ЛУЧШИЕ МАСТЕРА</p>
-                <h3 className="text-2xl">
-                  <strong className="text-4xl">Бритьё</strong>
+                <h3 className="text-lg lg:2xl">
+                  <strong className="text-2xl lg:text-4xl">Бритьё</strong>
                   <br />
                   бороды и головы
                 </h3>
               </div>
               <div className="block text-right ">
-                <Button variant="serviceLink">Услуги бритья</Button>
+                <Button variant="serviceLink">Услуги тату салона</Button>
               </div>
             </article>
             <article
@@ -144,14 +144,14 @@ export const PromoServices = (): ReactElement => {
             >
               <div className="font-rex">
                 <p className="text-xs text-orange-title">СТИЛЬ И ПРОФЕССИОНАЛИЗМ</p>
-                <h3 className="text-2xl">
-                  <strong className="text-4xl">Бритьё</strong>
+                <h3 className="text-lg lg:2xl">
+                  <strong className="text-2xl lg:text-4xl">Бритьё</strong>
                   <br />
                   бороды и головы
                 </h3>
               </div>
               <div className="block text-right ">
-                <Button variant="serviceLink">Услуги бритья</Button>
+                <Button variant="linearLink">Coming soon</Button>
               </div>
             </article>
           </div>

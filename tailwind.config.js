@@ -57,6 +57,9 @@ module.exports = {
         180: '180px',
         1800: '1800px',
       },
+      bgImage: {
+        gradient24: 'linear-gradient(45deg, var(--tw-gradient-stops))',
+      },
       animation: {
         'ping-slow': 'ping 2s cubic-bezier(.37,0,.8,.77) infinite',
       },

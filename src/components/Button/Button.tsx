@@ -1,6 +1,6 @@
 import { ReactElement, PropsWithChildren } from 'react';
 
-type ButtonVariant = 'standard' | 'accentLink' | 'serviceLink';
+type ButtonVariant = 'standard' | 'accentLink' | 'serviceLink' | 'linearLink';
 
 export interface ButtonProps extends PropsWithChildren {
   variant: ButtonVariant;
@@ -14,7 +14,9 @@ export const Button = ({ variant, onClick, children }: ButtonProps): ReactElemen
     accentLink:
       'bg-transparent text-btn-blue border-btn-blue text-xs opacity-70 shadow-[boxShadow.btn] min-w-180 hover:opacity-100 mb-10',
     serviceLink:
-      'bg-transparent text-orange-btn border-orange-title text-xs min-w-180 hover:opacity-100 mb-10',
+      'bg-buttonBg-gradient24 from-lime-500 to-red-500 text-orange-btn border-orange-title text-xs min-w-180 hover:opacity-100 mb-10',
+    linearLink:
+      'bg-gradient24-to-r from-lime-500 to-red-500 text-orange-btn border-orange-title text-xs min-w-180 hover:opacity-100 mb-10',
   };
 
   return (
