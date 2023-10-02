@@ -2,7 +2,7 @@
 
 import { ScrollButton } from '@/components/ScrollButton/ScrollButton';
 import { Footer } from '../components/Footer/Footer';
-import { HeaderPage } from '../features/header';
+import { HeaderPage } from '../Features/header';
 import { PromoCard } from '../components/PromoCard';
 
 const Home = async () => {
