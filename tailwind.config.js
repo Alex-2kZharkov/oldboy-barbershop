@@ -18,6 +18,7 @@ module.exports = {
         'btn-blue': '#56afe1',
         'orange-bg': '#896322',
         'opacity-tan': '#333',
+        'orange-light': '#d29c4e;',
         reddish: '#af212e',
         'footer-grey': '#aeaeae',
       },

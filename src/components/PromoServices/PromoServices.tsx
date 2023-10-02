@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import { Button } from '../Button';
 
 import { PromoHeader } from '../PromoHeader';
 
@@ -68,7 +69,6 @@ export const PromoServices = (): ReactElement => {
             mb-10
             min-h-[180px]
             max-h-[22rem]	
-
           "
             />
             <article
@@ -91,7 +91,7 @@ export const PromoServices = (): ReactElement => {
           <div className="flex flex-wrap justify-between">
             <article
               className="
-      bg-[url('/images/bg/services-icon1.svg')] bg-no-repeat py-3.5 px-1 bg-[length:200px_100px] bg-left-bottom basis-[23%]	
+      bg-[url('/images/bg/services-icon1.svg')] bg-no-repeat py-3.5 px-1 bg-[length:80px] bg-right-bottom basis-[23%]	
       "
             >
               <div className="font-rex">
@@ -103,14 +103,12 @@ export const PromoServices = (): ReactElement => {
                 </h3>
               </div>
               <div className="block text-right ">
-                <button className="h-8 w-32 bg-slate-500" type="button">
-                  Услуги бритья
-                </button>
+                <Button variant="serviceLink">Услуги бритья</Button>
               </div>
             </article>
             <article
               className="
-      bg-[url('/images/bg/services-icon2.svg')] bg-no-repeat py-3.5 px-1 bg-[length:200px_100px] bg-left-bottom basis-[23%]"
+      bg-[url('/images/bg/services-icon2.svg')] bg-no-repeat py-3.5 px-1 bg-[length:80px] bg-right-bottom basis-[23%]"
             >
               <div className="font-rex">
                 <p className="text-xs text-orange-title">ДЛЯ НАСТОЯЩИХ ЦЕНИТЕЛЕЙ</p>
@@ -121,14 +119,12 @@ export const PromoServices = (): ReactElement => {
                 </h3>
               </div>
               <div className="block text-right ">
-                <button className="h-8 w-32 bg-slate-500" type="button">
-                  Услуги бритья
-                </button>
+                <Button variant="serviceLink">Услуги бритья</Button>
               </div>
             </article>
             <article
               className="
-      bg-[url('/images/bg/services-icon3.svg')] bg-no-repeat py-3.5 px-1 bg-[length:200px_100px] bg-left-bottom basis-[23%]"
+      bg-[url('/images/bg/services-icon3.svg')] bg-no-repeat py-3.5 px-1 bg-[length:80px] bg-right-bottom basis-[23%]"
             >
               <div className="font-rex">
                 <p className="text-xs text-orange-title">ЛУЧШИЕ МАСТЕРА</p>
@@ -139,14 +135,12 @@ export const PromoServices = (): ReactElement => {
                 </h3>
               </div>
               <div className="block text-right ">
-                <button className="h-8 w-32 bg-slate-500" type="button">
-                  Услуги бритья
-                </button>
+                <Button variant="serviceLink">Услуги бритья</Button>
               </div>
             </article>
             <article
               className="
-      bg-[url('/images/bg/services-icon4.png')] bg-no-repeat py-3.5 px-1 bg-[length:200px_100px] bg-left-bottom basis-[23%]"
+      bg-[url('/images/bg/services-icon4.png')] bg-no-repeat py-3.5 px-1 bg-[length:80px] bg-right-bottom basis-[23%]"
             >
               <div className="font-rex">
                 <p className="text-xs text-orange-title">СТИЛЬ И ПРОФЕССИОНАЛИЗМ</p>
@@ -157,9 +151,7 @@ export const PromoServices = (): ReactElement => {
                 </h3>
               </div>
               <div className="block text-right ">
-                <button className="h-8 w-32 bg-slate-500" type="button">
-                  Услуги бритья
-                </button>
+                <Button variant="serviceLink">Услуги бритья</Button>
               </div>
             </article>
           </div>

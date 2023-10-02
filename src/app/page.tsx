@@ -43,7 +43,6 @@ const Home = async () => {
       <PromoCard />
       <PromoServices />
       <PromoCosmetics />
-
       <Footer
         branchesTotal={branchesTotal}
         countriesTotal={countriesTotal}
