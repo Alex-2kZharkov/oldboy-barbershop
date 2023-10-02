@@ -6,11 +6,11 @@ import { LinkOptions } from '../../types/link';
 import { ServicePromo } from '../../components/ServicePromo';
 import { ServiceAboutSection } from '../../components/ServiceAboutSection';
 
-interface HeaderProps {
+interface ShavingProps {
   mainNavList: LinkOptions;
 }
 
-export const Shaving = ({ mainNavList }: HeaderProps): ReactElement => {
+export const Shaving = ({ mainNavList }: ShavingProps): ReactElement => {
   return (
     <div>
       <div

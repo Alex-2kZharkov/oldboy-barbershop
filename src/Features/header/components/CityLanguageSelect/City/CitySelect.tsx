@@ -1,18 +1,18 @@
 import Link from 'next/link';
 import React, { ReactElement, useState } from 'react';
-import { useSetSelectedEntity } from '../../../../../types/useSetSelectedEntity';
 import { Cookies } from '../../../../../constants';
+import { useSetSelectedEntity } from '../../../../../types/useSetSelectedEntity';
 import { LocationSelector } from '../../../../../components/LocationSelector/LocationSelector';
 import { Modal } from '../../../../../components/Modal/Modal';
 
 export const CitySelect = (): ReactElement => {
   const [showModal, setShowModal] = useState(false);
   const { selectedEntity: selectedCity } = useSetSelectedEntity('', Cookies.City);
+  const { selectedEntity: selectedCountry } = useSetSelectedEntity('', Cookies.Country);
 
-  const handleOpen = (event: React.MouseEvent<HTMLElement>) => {
-    event.preventDefault();
-    setShowModal(true);
-    return showModal;
+  const toggleModal = () => {
+    setShowModal((current) => !current);
+    document.body.style.overflow = showModal ? 'auto' : 'hidden';
   };
 
   return (
@@ -31,16 +31,18 @@ export const CitySelect = (): ReactElement => {
         before:content-['']"
       >
         <p
-          onClick={handleOpen}
+          onClick={toggleModal}
           className="city-select__title m-0 text-orange-title font-rex text-xs"
         >
           Выбери свой <br /> барбершоп:
           <span className="m-0 text-orange-title font-rex text-[8.5px]">&#x25BC;</span>
         </p>
-        <p className="city-select__city font-rex m-0 text-base">{selectedCity}</p>
+        <p className="city-select__city font-rex m-0 text-base">
+          {selectedCountry} - {selectedCity}
+        </p>
       </Link>
       {showModal ? (
-        <Modal showModal={showModal} onClose={() => setShowModal(false)}>
+        <Modal showModal={showModal} onClose={toggleModal}>
           <LocationSelector />
         </Modal>
       ) : null}

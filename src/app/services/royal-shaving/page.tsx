@@ -20,7 +20,7 @@ const RoyalShavingPage = async () => {
   ]);
 
   return (
-    <main className="overflow-hidden flex md:container md:max-w-screen-2xl mx-auto flex-col">
+    <div className="overflow-hidden flex md:container md:max-w-screen-2xl mx-auto flex-col">
       <RoyalShaving mainNavList={headerMainList} />
       <Footer
         branchesTotal={branchesTotal}
@@ -33,7 +33,7 @@ const RoyalShavingPage = async () => {
         footerServicesList={footerServicesList}
         footerInfoList={footerInfoList}
       />
-    </main>
+    </div>
   );
 };
 
