@@ -7,7 +7,12 @@
   "rules": {
     "react/jsx-props-no-spreading": "off",
     "react/jsx-one-expression-per-line": "off",
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "no-unused-vars": "warn",
     "no-console": "warn",
     "func-names": "off",
@@ -28,6 +33,6 @@
         "ignorePropertyModificationsFor": ["state", "ctx"]
       }
     ],
-    "react/require-default-props" : "off"
+    "react/require-default-props": "off"
   }
 }

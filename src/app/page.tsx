@@ -1,5 +1,6 @@
 'use client';
 
+import { ScrollButton } from '@/components/ScrollButton/ScrollButton';
 import { Footer } from '../components/Footer/Footer';
 import { HeaderPage } from '../Features/header';
 import { PromoCard } from '../components/PromoCard';
@@ -45,6 +46,7 @@ const Home = async () => {
           <HeaderPage mainNavList={headerMainList} branchesTotal={branchesTotal} />
         </div>
         <PromoCard />
+        <ScrollButton />
       </main>
       <Footer
         branchesTotal={branchesTotal}
