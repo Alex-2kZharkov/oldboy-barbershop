@@ -1,5 +1,6 @@
 'use client';
 
+import { PromoBranches } from '@/components/PromoBranches';
 import { Footer } from '../components/Footer/Footer';
 import { HeaderPage } from '../Features/header';
 import { PromoCard } from '../components/PromoCard';
@@ -43,6 +44,7 @@ const Home = async () => {
       <PromoCard />
       <PromoServices />
       <PromoCosmetics />
+      <PromoBranches />
       <Footer
         branchesTotal={branchesTotal}
         countriesTotal={countriesTotal}

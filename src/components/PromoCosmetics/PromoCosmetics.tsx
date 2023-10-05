@@ -1,10 +1,11 @@
 import { ReactElement } from 'react';
-import { Button } from '../Button';
+
 import { PromoHeader } from '../PromoHeader';
+import { Button } from '../Button';
 
 export const PromoCosmetics = (): ReactElement => {
   return (
-    <section className="mt-8">
+    <section className="mt-8 ">
       <div className="-mb-32">
         <PromoHeader>
           <h2
@@ -51,7 +52,7 @@ export const PromoCosmetics = (): ReactElement => {
           </p>
         </div>
       </div>
-      <div className="pb-12">
+      <div className="pb-2">
         <article
           className="
             bg-[url('/images/bg/background-cosmetics.jpg')] 
@@ -67,39 +68,39 @@ export const PromoCosmetics = (): ReactElement => {
             after:h-20
             after:absolute
             after:bg-[length:400px]
-            after:-bottom-5  
-            
           "
         >
-          <div className="h-full backdrop-brightness-50">
-            <div className="relative w-11/12 pt-10 pr-12 pb-10 pl-[430px] lg:w-8/12">
-              <h2 className="font-rex text-2xl lg:text-3xl text-white my-7 leading-9">
+          <div className="relative w-12/12 pt-9 md:pt-12 pr-12  flex mr-10">
+            <div className="basis-1/3	">
+              <div
+                className="
+            bg-[url('/images/logo/cosmetics-logo.png'),_url('/images/logo/cosmetics-logo-crown.svg')]
+            bg-[contain,auto]
+            h-full
+            w-full
+            bg-no-repeat
+            z-20
+            mt-44
+            ml-8
+           "
+              />
+            </div>
+
+            <div className="basis-2/3">
+              <h2 className="font-rex text-lg md:2xl lg:text-3xl text-white my-5 md:my-8 leading-7 md:leading-9">
                 НОВАЯ ЛИНЕЙКА МУЖСКОЙ КОСМЕТИКИ ПРЕМИУМ-КЛАССА ОТ БРЕНДА С МИРОВЫМ ИМЕНЕМ <br />
-                <span className="font-rex text-xl lg:text-2xl text-orange-light">
+                <span className="font-rex text-lg  md:2xl lg:text-2xl text-orange-light">
                   OLDBOY BARBERSHOP × BARBER WILD
                 </span>
               </h2>
-
-              <p className="text-white font-button_font text-base font-semibold lg:text-lg">
+              <p className="text-white font-button_font text-sm md:text-base font-semibold lg:text-lg ">
                 Спрашивайте во всех салонах сети OldBoy Barbershop нашу новую линейку стайлинговых
                 средств, созданных для профессионального ухода
               </p>
-              <div className="pt-12">
+              <div className="pt-6 md:pt-12">
                 <Button variant="accentLink">Узнать подробнее</Button>
               </div>
             </div>
-            <div
-              className="  
-            absolute
-            -bottom-6
-            bg-[url('/images/logo/cosmetics-logo.png'),_url('/images/logo/cosmetics-logo-crown.svg')]
-            bg-[contain,auto]
-            h-72
-            w-6/12
-            bg-no-repeat
-            z-20
-           "
-            />
           </div>
         </article>
       </div>
