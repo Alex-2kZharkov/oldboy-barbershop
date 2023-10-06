@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import { Button } from '../Button';
 
 import { PromoHeader } from '../PromoHeader';
+import { ServiceButtons } from './components/ServiceButtons';
 
 export const PromoServices = (): ReactElement => {
   return (
@@ -53,7 +54,7 @@ export const PromoServices = (): ReactElement => {
           </div>
         </div>
         <div className="px-10 py-12">
-          <div className="lg:flex lg:justify-between z-0">
+          <div className="lg:flex lg:justify-between z-0 justify-around">
             <article
               className="
             bg-[url('/images/bg/beard-section1.jpeg')] 
@@ -70,7 +71,19 @@ export const PromoServices = (): ReactElement => {
             min-h-[180px]
             max-h-[22rem]	
           "
-            />
+            >
+              <div className="w-full grid grid-col-3 bottom-5 absolute mx-5 md:mx-10">
+                <div className="font-rex leading-9 col-start-1 col-span-2">
+                  <h3 className="text-2xl text-white">
+                    Мужские <br /> <strong className="text-5xl">стрижки</strong>
+                  </h3>
+                  <p className="text-2xl text-orange-title">лучшее качество</p>
+                </div>
+                <div className="col-start-3 col-span-1 mt-12">
+                  <Button variant="promoServiceLink">Все о стрижках</Button>
+                </div>
+              </div>
+            </article>
             <article
               className="
             bg-[url('/images/bg/beard-section2.jpeg')] 
@@ -86,74 +99,52 @@ export const PromoServices = (): ReactElement => {
             min-h-[180px]
             max-h-[22rem]
             "
-            />
+            >
+              <div className="w-full grid grid-col-3 mx-10 bottom-5 absolute">
+                <div className="font-rex leading-9 col-start-1 col-span-2 w-4/6 sm:w-full">
+                  <h3 className="text-2xl text-white">
+                    Стрижка <br /> <strong className="text-5xl">усов и бороды</strong>
+                  </h3>
+                  <p className="text-2xl text-orange-title">наша специализация</p>
+                </div>
+
+                <div className="col-start-3 col-span-1 mt-12">
+                  <Button variant="promoServiceLink">усы и борода</Button>
+                </div>
+              </div>
+            </article>
           </div>
           <div className="flex flex-wrap justify-between">
-            <article
-              className="
-      bg-[url('/images/bg/services-icon1.svg')] bg-no-repeat py-3.5 px-1 bg-[length:80px] bg-right-bottom basis-[23%]	
-      "
-            >
-              <div className="font-rex">
-                <p className="text-xs text-orange-title">СТИЛЬ И ПРОФЕССИОНАЛИЗМ</p>
-                <h3 className="text-lg lg:2xl">
-                  <strong className="text-2xl lg:text-4xl">Бритьё</strong>
-                  <br />
-                  бороды и головы
-                </h3>
-              </div>
-              <div className="block text-right ">
-                <Button variant="serviceLink">Услуги бритья</Button>
-              </div>
-            </article>
-            <article
-              className="
-      bg-[url('/images/bg/services-icon2.svg')] bg-no-repeat py-3.5 px-1 bg-[length:80px] bg-right-bottom basis-[23%]"
-            >
-              <div className="font-rex">
-                <p className="text-xs text-orange-title">ДЛЯ НАСТОЯЩИХ ЦЕНИТЕЛЕЙ</p>
-                <h3 className="text-lg lg:2xl">
-                  <strong className="text-2xl lg:text-4xl">Королевское</strong>
-                  <br />
-                  бритье
-                </h3>
-              </div>
-              <div className="block text-right ">
-                <Button variant="serviceLink">для ценителей</Button>
-              </div>
-            </article>
-            <article
-              className="
-      bg-[url('/images/bg/services-icon3.svg')] bg-no-repeat py-3.5 px-1 bg-[length:80px] bg-right-bottom basis-[23%]"
-            >
-              <div className="font-rex">
-                <p className="text-xs text-orange-title">ЛУЧШИЕ МАСТЕРА</p>
-                <h3 className="text-lg lg:2xl">
-                  <strong className="text-2xl lg:text-4xl">Бритьё</strong>
-                  <br />
-                  бороды и головы
-                </h3>
-              </div>
-              <div className="block text-right ">
-                <Button variant="serviceLink">Услуги тату салона</Button>
-              </div>
-            </article>
-            <article
-              className="
-      bg-[url('/images/bg/services-icon4.png')] bg-no-repeat py-3.5 px-1 bg-[length:80px] bg-right-bottom basis-[23%]"
-            >
-              <div className="font-rex">
-                <p className="text-xs text-orange-title">СТИЛЬ И ПРОФЕССИОНАЛИЗМ</p>
-                <h3 className="text-lg lg:2xl">
-                  <strong className="text-2xl lg:text-4xl">Бритьё</strong>
-                  <br />
-                  бороды и головы
-                </h3>
-              </div>
-              <div className="block text-right ">
-                <Button variant="linearLink">Coming soon</Button>
-              </div>
-            </article>
+            <ServiceButtons
+              variant="style"
+              header="СТИЛЬ И ПРОФЕССИОНАЛИЗМ"
+              title="Бритьё"
+              subtitle="бороды и головы"
+              buttonText="Услуги бритья"
+            />
+
+            <ServiceButtons
+              variant="forFans"
+              header="ДЛЯ НАСТОЯЩИХ ЦЕНИТЕЛЕЙ"
+              title="Королевское"
+              subtitle="бритье"
+              buttonText="для ценителей"
+            />
+            <ServiceButtons
+              variant="masters"
+              header="ЛУЧШИЕ МАСТЕРА"
+              title="Нанесение"
+              subtitle="татуировок"
+              buttonText="Услуги тату салона"
+            />
+
+            <ServiceButtons
+              variant="complexCare"
+              header="Комплексный уход"
+              title="Барбер-SPA"
+              subtitle=" Услуги"
+              buttonText="Coming soon"
+            />
           </div>
         </div>
       </div>

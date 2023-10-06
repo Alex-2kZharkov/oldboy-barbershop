@@ -2,7 +2,7 @@ import { PromoHeader } from '../PromoHeader';
 
 export const PromoBranches = () => {
   return (
-    <section>
+    <section className="mt-24">
       <div>
         <PromoHeader>
           <h2
@@ -47,20 +47,20 @@ export const PromoBranches = () => {
             Сеть oldboy
           </p>
         </div>
-        <div className="grid grid-col-6 font-rex py-12">
-          <article className="col-start-4 col-span-1 leading-tight">
-            <h1 className="text-6xl">Франшиза</h1>
-            <h3 className="text-2xl">Oldboy barbershop</h3>
-          </article>
-          <article className="col-start-6 col-span-1 flex mt-4">
-            <p className="text-9xl font-rex_inline text-orange-title">294</p>
-            <div className="ml-2 text-xl">
-              <p className="w-12/12 bg-orange-title h-2  bottom-3 left-24" />
-              <span className="text-4xl">филиала</span> <br /> в 11 странах и 7 столицах
-              <p className="w-12/12 bg-orange-title h-2  bottom-3 left-24" />
-            </div>
-          </article>
-        </div>
+      </div>
+      <div className="md:grid md:grid-col-6 font-rex py-12">
+        <article className="text-center md:col-start-4 md:col-span-1 leading-tight">
+          <h1 className="text-6xl">Франшиза</h1>
+          <h3 className="text-2xl">Oldboy barbershop</h3>
+        </article>
+        <article className="justify-center md:col-start-6 md:col-span-1 flex mt-12 md:mt-4">
+          <p className="text-9xl font-rex_inline text-orange-title">294</p>
+          <div className="ml-2 text-xl">
+            <p className="w-12/12 bg-orange-title h-2  bottom-3 left-24" />
+            <span className="text-4xl">филиала</span> <br /> в 11 странах и 7 столицах
+            <p className="w-12/12 bg-orange-title h-2  bottom-3 left-24" />
+          </div>
+        </article>
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ import { Button } from '../Button';
 
 export const PromoCosmetics = (): ReactElement => {
   return (
-    <section className="mt-8 ">
+    <section>
       <div className="-mb-32">
         <PromoHeader>
           <h2
@@ -52,25 +52,18 @@ export const PromoCosmetics = (): ReactElement => {
           </p>
         </div>
       </div>
-      <div className="pb-2">
+      <div className="">
         <article
           className="
             bg-[url('/images/bg/background-cosmetics.jpg')] 
             w-full
             bg-[position:center_top,_left_bottom_0.2rem]
             bg-[length:100%,_cover]
-            h-[calc(56.25vw-40px)]     
             min-h-[160px]
             max-h-[32rem]	
-            after:bg-[url('/images/bg/white-grunge.svg')]
-            after:bg-repeat-x
-            after:w-full
-            after:h-20
-            after:absolute
-            after:bg-[length:400px]
           "
         >
-          <div className="relative w-12/12 pt-9 md:pt-12 pr-12  flex mr-10">
+          <div className="relative w-12/12 pt-4 sm:pt-9 md:pt-12 px-12 mr-8 h-5/6 md:flex">
             <div className="basis-1/3	">
               <div
                 className="
@@ -80,8 +73,8 @@ export const PromoCosmetics = (): ReactElement => {
             w-full
             bg-no-repeat
             z-20
-            mt-44
-            ml-8
+            mt-36
+            ml-8 
            "
               />
             </div>
@@ -97,7 +90,7 @@ export const PromoCosmetics = (): ReactElement => {
                 Спрашивайте во всех салонах сети OldBoy Barbershop нашу новую линейку стайлинговых
                 средств, созданных для профессионального ухода
               </p>
-              <div className="pt-6 md:pt-12">
+              <div className="pt-2 sm:pt-6 md:pt-12">
                 <Button variant="accentLink">Узнать подробнее</Button>
               </div>
             </div>
