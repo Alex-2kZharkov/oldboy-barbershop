@@ -8,15 +8,16 @@ import { PromoServices } from '../components/PromoServices';
 import { PromoCosmetics } from '../components/PromoCosmetics';
 
 const Home = async () => {
-  const [barbershopsInfoResponse, footerListsResponse] = await Promise.all([
+  const [headerListResponse, barbershopsInfoResponse, footerListsResponse] = await Promise.all([
+    fetch('http://localhost:3000/api/headerList'),
     fetch('http://localhost:3000/api/barbershopsInfo'),
     fetch('http://localhost:3000/api/footerLists'),
   ]);
   const [
+    { headerMainList },
     { branchesTotal, countriesTotal, capitalsTotal },
     { footerMainList, footerServicesList, footerInfoList },
   ] = await Promise.all([barbershopsInfoResponse.json(), footerListsResponse.json()]);
-  // className=" overflow-hidden flex md:container max-w-{1700px}  mx-auto flex-col">
   return (
     <main className="overflow-hidden mx-auto max-w-1800">
       <div
@@ -45,19 +46,11 @@ const Home = async () => {
       <PromoServices />
       <PromoCosmetics />
       <PromoBranches />
-      <Footer
-        branchesTotal={branchesTotal}
-        countriesTotal={countriesTotal}
-        capitalsTotal={capitalsTotal}
-        footerMainTitle="Меню"
-        footerServicesTitle="Услуги"
-        footerInfoTitle="Информация"
-        footerMainList={footerMainList}
-        footerServicesList={footerServicesList}
-        footerInfoList={footerInfoList}
-      />
-    </main>
-  );
+  ] = await Promise.all([
+    headerListResponse.json(),
+    barbershopsInfoResponse.json(),
+    footerListsResponse.json(),
+  ]);
 };
 
 export default Home;
