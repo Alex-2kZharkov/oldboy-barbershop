@@ -35,8 +35,15 @@ export const RoyalShaving = ({ mainNavList }: RoyalShavingProps): ReactElement =
         after:w-full"
       >
         <Layout>
-          <Header mainNavList={mainNavList} />
-          <ServicePromo titleTop="Королевское" titleBottom="бритьё" iconVariant="shavette" />
+          <div>
+            <Header mainNavList={mainNavList} />
+            <ServicePromo
+              titleTop="Королевское"
+              titleBottom="бритьё"
+              iconVariant="shavette"
+              iconPosition="forRoyalShaving"
+            />
+          </div>
         </Layout>
       </div>
       <main>
